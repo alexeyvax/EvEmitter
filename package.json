@@ -1,5 +1,5 @@
 {
-  "name": "evemitter",
+  "name": "evemitter-alexeyvax",
   "version": "1.0.0",
   "description": "EvEmitter is a realization event Emitter on syntax ES2015",
   "main": "public/EvEmitter.min.js",
