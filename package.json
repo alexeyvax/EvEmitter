@@ -1,0 +1,20 @@
+{
+  "name": "evemitter",
+  "version": "1.0.0",
+  "description": "EvEmitter is a realization event Emitter on syntax ES2015",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "alexeyvax",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rollup": "^2.5.1",
+    "gulp-sourcemaps": "^1.9.1",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-uglify": "^1.0.1"
+  }
+}
