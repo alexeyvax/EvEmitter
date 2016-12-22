@@ -2,7 +2,7 @@
   "name": "evemitter",
   "version": "1.0.0",
   "description": "EvEmitter is a realization event Emitter on syntax ES2015",
-  "main": "index.js",
+  "main": "public/EvEmitter.min.js",
   "scripts": {
     "start": "gulp"
   },

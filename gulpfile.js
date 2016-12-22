@@ -8,12 +8,12 @@ const gulp = require( 'gulp' ),
 gulp.task( 'rollup', () =>
 {
   gulp.src([
-    './scripts/index.js',
+    './scripts/EvEmitter.js',
   ])
   .pipe( sourcemaps.init() )
   .pipe( rollup({
     allowRealFiles: true,
-    entry: './scripts/index.js',
+    entry: './scripts/EvEmitter.js',
     plugins: [
       babel({
         presets: ['es2015-rollup'],
@@ -23,7 +23,7 @@ gulp.task( 'rollup', () =>
     ],
     format: 'iife'
   }))
-  .pipe( rename( 'index.min.js' ) )
+  .pipe( rename( 'EvEmitter.min.js' ) )
   .pipe( sourcemaps.write('.') )
   .pipe( gulp.dest( 'public/' ) );
 });

@@ -1,7 +1,6 @@
 /nbproject/private/
 /bower_components/
 node_modules
-public
 
 __tests__
 .vscode
