@@ -1,37 +1,32 @@
 const gulp = require( 'gulp' ),
     sourcemaps = require( 'gulp-sourcemaps' ),
-    rollup = require( 'gulp-rollup' ),
-    babel = require( 'rollup-plugin-babel' ),
-    uglify = require( 'rollup-plugin-uglify' ),
-    rename = require( 'gulp-rename' );
+    babel = require( 'gulp-babel' ),
+    rename = require( 'gulp-rename' ),
+    uglify = require( 'gulp-uglify' );
 
-gulp.task( 'rollup', () =>
+gulp.task( 'transpiler', () =>
 {
   gulp.src([
     './scripts/EvEmitter.js',
   ])
-  .pipe( sourcemaps.init() )
-  .pipe( rollup({
-    allowRealFiles: true,
-    entry: './scripts/EvEmitter.js',
-    plugins: [
-      babel({
-        presets: ['es2015-rollup'],
-        babelrc: false
-			}),
-			uglify()
-    ],
-    format: 'iife'
+  .pipe(
+    babel({
+      presets: ['es2015']
   }))
+  .pipe( sourcemaps.init() )
   .pipe( rename( 'EvEmitter.min.js' ) )
+  .pipe( uglify().on( 'error', ( e ) =>
+  {
+      console.log( e );
+  }))
   .pipe( sourcemaps.write('.') )
   .pipe( gulp.dest( 'public/' ) );
 });
 
 gulp.task( 'watch', () =>
 	{
-		gulp.watch( 'scripts/**/*.js', ['rollup'] )
+		gulp.watch( 'scripts/**/*.js', ['transpiler'] )
 	}
 );
 
-gulp.task( 'default', ['watch', 'rollup'] );
+gulp.task( 'default', ['transpiler'] );
