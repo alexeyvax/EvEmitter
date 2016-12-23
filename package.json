@@ -7,6 +7,11 @@
     "start": "gulp",
     "watch": "gulp watch"
   },
+  "keywords": [
+    "event-emitter",
+    "evemitter",
+    "EvEmitter"
+  ],
   "author": "alexeyvax",
   "license": "MIT",
   "devDependencies": {

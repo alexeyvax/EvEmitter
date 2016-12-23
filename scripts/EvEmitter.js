@@ -1,17 +1,16 @@
 /**
  * Реализация EventEmitter
  * 
- * @method addListener добавляет слушателя и позволяет слушать его всем подписчикам
- * @param label название события
- * @param callback функция обратного вызова
+ * @method addListener adds the listener and lets him listen to all subscribers
+ * @param label the name listener
+ * @param callback
  *
- * @method removeListener удаляет слушателя
- * @param label название события
- * @param callback функция обратного вызова
+ * @method removeListener remove listener
+ * @param label the name listener
  *
- * @method emit уведомляет всех слушателей о изменении состояния
- * @param label название события
- * @param args список изменений
+ * @method emit transfers changes all listeners
+ * @param label the name listener
+ * @param args arguments for sending
  */
 
 class EvEmitter
