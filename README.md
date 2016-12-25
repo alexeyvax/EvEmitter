@@ -9,23 +9,31 @@ Emitter used to link multiple files.
 
 ## Example
 
+    // first file 'createEmitter.js'
     import EventEmitter from 'evemitter-alexeyvax';
     
     // create new emitter
     const emitter = new EventEmitter();
     
     // add listener in storage
-    emitter.addListener( 'addBook', ( item ) =>
+    emitter.addListener( 'anyNamelistener', ( item ) =>
     {
         console.log( item );
     });
     
     // remove listener from storage
-    emitter.removeListener( 'addBook' );
+    emitter.removeListener( 'anyNamelistener' );
+    
+    export {
+        emitter
+    }
     
     **********
     
     // another file
     
+    import emitter from 'createEmitter.js';
+    
     // transfers changes all listeners
-    emitter.emit( 'addBook', item );
+    emitter.emit( 'anyNamelistener', item );
+    
