@@ -1,5 +1,5 @@
 /**
- * Реализация EventEmitter
+ * Realization EventEmitter
  * 
  * @method addListener adds the listener and lets him listen to all subscribers
  * @param label the name listener
@@ -61,7 +61,7 @@ class EvEmitter
 		{
 			listeners.forEach(( listener ) =>
 			{
-				listener( ...args ); 
+				listener( ...args );
 			});
 
 			return true;

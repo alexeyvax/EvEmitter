@@ -1,25 +1,25 @@
 {
-  "name": "evemitter-alexeyvax",
-  "version": "1.0.3",
-  "description": "EvEmitter is a realization event Emitter on syntax ES2015",
-  "main": "public/EvEmitter.min.js",
-  "scripts": {
-    "start": "gulp",
-    "watch": "gulp watch"
-  },
-  "keywords": [
-    "event-emitter",
-    "evemitter",
-    "EvEmitter"
-  ],
-  "author": "alexeyvax",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-preset-es2015": "^6.18.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^1.9.1",
-    "gulp-uglify": "^2.0.0"
-  }
+	"name": "evemitter-alexeyvax",
+	"version": "1.0.3",
+	"description": "EvEmitter is a realization event Emitter on syntax ES2015",
+	"main": "public/EvEmitter.min.js",
+	"scripts": {
+		"start": "gulp",
+		"watch": "gulp watch"
+	},
+	"keywords": [
+		"event-emitter",
+		"evemitter",
+		"EvEmitter"
+	],
+	"author": "alexeyvax",
+	"license": "MIT",
+	"devDependencies": {
+		"babel-preset-es2015": "^6.18.0",
+		"gulp": "^3.9.1",
+		"gulp-babel": "^6.1.2",
+		"gulp-rename": "^1.2.2",
+		"gulp-sourcemaps": "^1.9.1",
+		"gulp-uglify": "^2.0.0"
+	}
 }
