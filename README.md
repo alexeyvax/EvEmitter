@@ -5,7 +5,7 @@ Emitter used to link multiple files.
 
 ## Installation
 
-    npm install EvEmitter
+    npm install --save evemitter-alexeyvax
 
 ## Example
 
